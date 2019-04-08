@@ -30,7 +30,7 @@ namespace lbot_显示类 {
         ON =1
     }
 
-    //% blockId=lbot_LED1 block="LED1|pin %pin|value %value"
+    //% blockId=lbot_LED1 block="LED灯|引脚 %pin|状态 %value"
     //% weight=5
     //% blockGap=8
     //% color="#C814B8"
@@ -41,7 +41,7 @@ namespace lbot_显示类 {
 
     }
 
-    //% blockId=lbot_LED2 block="LED2|pin %pin|value %value"
+    //% blockId=lbot_LED2 block="LED灯|引脚 %pin|亮度 %value"
     //% weight=4
     //% blockGap=8
     //% color="#C814B8"
@@ -53,7 +53,7 @@ namespace lbot_显示类 {
 
     }
 
-    //% blockId=lbot_BreathLED block="BreathLED|pin %pin"
+    //% blockId=lbot_BreathLED block="呼吸灯|引脚 %pin"
     //% weight=3
     //% blockGap=8
     //% color="#C814B8"
@@ -74,7 +74,7 @@ namespace lbot_显示类 {
 
     }
 
-    //% blockId=lbot_RGB block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value1 %value1|value2 %value2|value3 %value3"
+    //% blockId=lbot_RGB block="RGB七彩灯|引脚R %pin1|引脚G %pin2|引脚B %pin3|红色 %value1|绿色 %value2|蓝色 %value3"
     //% weight=2
     //% blockGap=8
     //% color="#C814B8"
@@ -87,7 +87,7 @@ namespace lbot_显示类 {
         pins.analogWritePin(pin3, value3 * 1024 / 256);
 
     }
-    //% blockId=lbot_RGB2 block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value %value"
+    //% blockId=lbot_RGB2 block="RGB七彩灯|引脚R %pin1|引脚G %pin2|引脚B %pin3|显示 %value"
     //% weight=1
     //% blockGap=8
     //% color="#C814B8"
@@ -169,8 +169,7 @@ namespace lbot_传感器类 {
         NoGet = 1
     }
     
-
-    //% blockId=lbot_Voice_Sensor block="Voice_Sensor|pin %pin|value %value"
+    //% blockId=lbot_Voice_Sensor block="声音传感器|引脚 %pin|返回 %value"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -195,7 +194,7 @@ namespace lbot_传感器类 {
             control.waitMicros(13);
         }
     }
-    //% blockId=lbot_IR_Sensor block="IR_Sensor|pin %pin| |%value|障碍物"
+    //% blockId=lbot_IR_Sensor block="红外传感器|引脚 %pin|  |%value|障碍物"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -213,7 +212,7 @@ namespace lbot_传感器类 {
 
     }
 
-    //% blockId=lbot_IR_Send block="IR_Send|pin %pin"
+    //% blockId=lbot_IR_Send block="红外发射|引脚 %pin"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -225,7 +224,7 @@ namespace lbot_传感器类 {
 
     }
    
-    //% blockId=lbot_ultrasonic block="Ultrasonic|Trig %Trig|Echo %Echo"
+    //% blockId=lbot_ultrasonic block="超声波|发射管脚 %Trig|接收管脚 %Echo"
     //% color="#87CEEB"
     //% weight=100
     //% blockGap=10
@@ -281,7 +280,7 @@ namespace lbot_输入类 {
         Realse = 1
     }
 
-    //% blockId=lbot_TouchPad block="TouchPad|pin %pin|value %value"
+    //% blockId=lbot_TouchPad block="触摸开关|引脚 %pin|返回 %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -298,7 +297,7 @@ namespace lbot_输入类 {
 
     }
     
-    //% blockId=lbot_Rocker block="Rocker|VRX %pin1|VRY %pin2|SW %pin3|value %value"
+    //% blockId=lbot_Rocker block="遥杆|VRX %pin1|VRY %pin2|SW %pin3|返回 %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -341,7 +340,7 @@ namespace lbot_输入类 {
 
     }
 
-    //% blockId=lbot_Button block="Button|pin %pin|value %value"
+    //% blockId=lbot_Button block="按键|引脚 %pin|返回 %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -373,7 +372,7 @@ namespace lbot_音乐类 {
         Beep
     }
 
-    //% blockId=lbot_Buzzer block="Buzzer|pin %pin|value %value"
+    //% blockId=lbot_Buzzer block="有源蜂鸣器|引脚 %pin|值 %value"
     //% weight=100
     //% blockGap=10 
     //% color="#D2691E"
@@ -395,7 +394,7 @@ namespace lbot_音乐类 {
 //% color="#0000CD" weight=21 icon="\uf185"
 namespace lbot_电机类 {
 
-    //% blockId=lbot_Fan block="Fan|pin %pin|speed %value"
+    //% blockId=lbot_Fan block="风扇|引脚 %pin|速度 %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -407,7 +406,7 @@ namespace lbot_电机类 {
 
     }
 
-    //% blockId=lbot_Servo block="Servo|pin %pin|value %value"
+    //% blockId=lbot_Servo block="舵机|引脚 %pin|角度 %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -752,7 +751,7 @@ namespace lbot_小车类 {
      * *****************************************************************
      * @param index
      */
-    //% blockId=lbot_RGB_Car_Big2 block="RGB_Car_Big2|value %value"
+    //% blockId=lbot_RGB_Car_Big2 block="小车RGB探照灯|选择车灯颜色 %value"
     //% weight=101
     //% blockGap=10
     //% color="#C814B8"
@@ -810,7 +809,7 @@ namespace lbot_小车类 {
             }
         }
     }
-    //% blockId=lbot_RGB_Car_Big block="RGB_Car_Big|value1 %value1|value2 %value2|value3 %value3"
+    //% blockId=lbot_RGB_Car_Big block="小车RGB探照灯|红色 %value1|绿色 %value2|蓝色 %value3"
     //% weight=100
     //% blockGap=10
     //% color="#C814B8"
@@ -835,7 +834,7 @@ namespace lbot_小车类 {
 
     }
 
-    //% blockId=lbot_RGB_Car_Program block="RGB_Car_Program"
+    //% blockId=lbot_RGB_Car_Program block="七彩流水灯"
     //% weight=99
     //% blockGap=10
     //% color="#C814B8"
@@ -849,7 +848,7 @@ namespace lbot_小车类 {
     }
 
 
-	//% blockId=lbot_ultrasonic_car block="ultrasonic return distance(cm)"
+	//% blockId=lbot_ultrasonic_car block="超声波返回（cm）"
     //% color="#006400"
     //% weight=98
     //% blockGap=10
@@ -869,7 +868,7 @@ namespace lbot_小车类 {
         return  Math.floor(d / 58);
     }
 
-    //% blockId=lbot_Music_Car block="Music_Car|%index"
+    //% blockId=lbot_Music_Car block="小车音乐播放|%index"
     //% weight=97
     //% blockGap=10
     //% color="#006400"
@@ -898,7 +897,7 @@ namespace lbot_小车类 {
             case enMusic.power_down: music.beginMelody(music.builtInMelody(Melodies.PowerDown), MelodyOptions.Once); break;
         }
     }
-    //% blockId=lbot_Servo_Car block="Servo_Car|num %num|value %value"
+    //% blockId=lbot_Servo_Car block="小车舵机|编号 %num|角度 %value"
     //% weight=96
     //% blockGap=10
     //% color="#006400"
@@ -913,7 +912,7 @@ namespace lbot_小车类 {
 
     }
 
-    //% blockId=lbot_Avoid_Sensor block="Avoid_Sensor|value %value"
+    //% blockId=lbot_Avoid_Sensor block="避障传感器|检测到 %value"
     //% weight=95
     //% blockGap=10
     //% color="#006400"
@@ -953,7 +952,7 @@ namespace lbot_小车类 {
         return temp;
 
     }
-    //% blockId=lbot_Line_Sensor block="Line_Sensor|direct %direct|value %value"
+    //% blockId=lbot_Line_Sensor block="巡线传感器|位置 %direct|检测到 %value"
     //% weight=94
     //% blockGap=10
     //% color="#006400"
@@ -998,7 +997,7 @@ namespace lbot_小车类 {
         return temp;
 
     }
-    //% blockId=lbot_CarCtrl block="CarCtrl|%index"
+    //% blockId=lbot_CarCtrl block="小车控制|%index"
     //% weight=93
     //% blockGap=10
     //% color="#006400"
@@ -1014,7 +1013,7 @@ namespace lbot_小车类 {
             case CarState.Car_SpinRight: Car_spinright(255, 255); break;
         }
     }
-    //% blockId=lbot_CarCtrlSpeed block="CarCtrlSpeed|%index|speed %speed"
+    //% blockId=lbot_CarCtrlSpeed block="小车控制|%index|速度 %speed"
     //% weight=92
     //% blockGap=10
     //% speed.min=0 speed.max=255
@@ -1031,6 +1030,7 @@ namespace lbot_小车类 {
             case CarState.Car_SpinRight: Car_spinright(speed, speed); break;
         }
     }
+    //% color="#C814B8"
     //% blockId=lbot_CarCtrlSpeed2 block="CarCtrlSpeed2|%index|speed1 %speed1|speed2 %speed2"
     //% weight=91
     //% blockGap=10
