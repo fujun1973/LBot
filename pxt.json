@@ -1,7 +1,7 @@
 {
-    "name": "mbit",
+    "name": "lbot",
     "version": "2.0.0",
-    "description": "Extension for YahBoom m:bit V2.0.0",
+    "description": "Extension for lbot",
     "license": "MIT",
     "dependencies": {
         "core": "*",
