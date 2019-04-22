@@ -6,7 +6,7 @@
     "dependencies": {
         "core": "*",
         "neopixel": "github:fujun1973/pxt-neopixel",
-        "Mbit_IR":  "github:lzty634158/yahboom_mbit_IR"
+        "lbot_IR":  "github:fujun1973/LBot_IR"
 	
 
     },
