@@ -1031,7 +1031,7 @@ namespace lbot_小车类 {
         }
     }
     //% color="#C814B8"
-    //% blockId=lbot_CarCtrlSpeed2 block="CarCtrlSpeed2|%index|speed1 %speed1|speed2 %speed2"
+    //% blockId=lbot_CarCtrlSpeed2 block="小车控制|%index|左电机速度 %speed1|右电机速度 %speed2"
     //% weight=91
     //% blockGap=10
     //% speed1.min=0 speed1.max=255 speed2.min=0 speed2.max=255
